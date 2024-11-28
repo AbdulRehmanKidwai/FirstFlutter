@@ -56,12 +56,12 @@ class _LoginPageState extends State<LoginPage> {
                   isChange = true;
                 });
 
-                await Future.delayed(const Duration(milliseconds: 500));
+                await Future.delayed(const Duration(milliseconds: 1000));
                 Navigator.pushNamed(context, MyRoutes.homeRoute);
               },
               child: AnimatedContainer(
                 duration: const Duration(
-                  milliseconds: 500,
+                  milliseconds: 1000,
                 ),
                 width: isChange ? 50 : 150,
                 height: 50,
